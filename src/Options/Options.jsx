@@ -1,11 +1,11 @@
-const Options = ({ feedback, setFeedback }) => {
-    const handleClick = (type) => { setFeedback({ ...feedback, [type]: feedback[type] + 1 }) };
+const Options = ({ updateFeedback, resetFeedback, totalFeedback }) => {
 
     return (
         <div>
-            <button onClick={() => handleClick('good')}>Good</button>
-            <button onClick={() => handleClick('neutral')}>Neutral</button>
-            <button onClick={() => handleClick('bad')}>Bad</button>
+            <button onClick={() => updateFeedback('good')}>Good</button>
+            <button onClick={() => updateFeedback('neutral')}>Neutral</button>
+            <button onClick={() => updateFeedback('bad')}>Bad</button>
+            {totalFeedback > 0 && <button onClick={resetFeedback}>Reset</button>}
         </div>
     );
 
