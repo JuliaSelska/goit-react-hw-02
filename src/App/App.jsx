@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react'
 import reactLogo from '../assets/react.svg'
 import viteLogo from '/vite.svg'
 import '../App/App.module.css'
-import Description from '../Description/Description'
-import Options from '../Options/Options'
-import Feedback from '../Feedback/Feedback'
-import Notification from '../Notification/Notification'
+import Description from '../components/Description/Description'
+import Options from '../components/Options/Options'
+import Feedback from '../components/Feedback/Feedback'
+import Notification from '../components/Notification/Notification'
 
 const App = () => {
     //локальне сховище для збереження стану при його зміні
